@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exemplo de JavaScript não-obstrutivo.</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <button id="botao">Teste</button>
+</body>
+
+</html>
+<script>
+    var objBotao = document.getElementById("botao");
+    objBotao.onauxclick = function () {
+        window.alert("Alô, Mundo!");
+    }
+</script>
